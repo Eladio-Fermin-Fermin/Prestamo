@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prestamo"
         mc:Ignorable="d" Height="350" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" Title="Prestamo">
-        
     <Grid>
         <StackPanel Orientation="Vertical" Margin="10,10,10,10" Grid.ColumnSpan="7">
             <StackPanel Orientation="Horizontal">
