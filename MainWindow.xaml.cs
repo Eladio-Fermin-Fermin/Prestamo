@@ -58,7 +58,7 @@ namespace Prestamo
 
         private void buscarButton_Click(object sender, RoutedEventArgs e)
         {
-            var cliente = ClienteBLL.Buscar(int.Parse(Prestamoid.Text));
+            var cliente = PrestamoBLL.Buscar(int.Parse(Prestamoid.Text));
 
             if (cliente != null)
             {
@@ -80,7 +80,7 @@ namespace Prestamo
                 return;
             }
 
-            var key = ClienteBLL.Guardar(cliente);
+            var key = PrestamoBLL.Guardar(cliente);
 
             if (key)
             {
@@ -101,7 +101,7 @@ namespace Prestamo
 
         private void eliminarButton_Click(object sender, RoutedEventArgs e)
         {
-            if (ClienteBLL.Eliminar(int.Parse(Prestamoid.Text)))
+            if (PrestamoBLL.Eliminar(int.Parse(Prestamoid.Text)))
             {
                 Limpiar();
                 MessageBox.Show("Se a Eliminado." + Prestamoid , "Exitosamente!",

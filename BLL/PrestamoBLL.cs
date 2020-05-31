@@ -13,7 +13,7 @@ using EntityState = Microsoft.EntityFrameworkCore.EntityState;
 
 namespace Prestamo.BLL
 {
-    public class ClienteBLL
+    public class PrestamoBLL
     {
         public static bool Existe(int id)
         {
