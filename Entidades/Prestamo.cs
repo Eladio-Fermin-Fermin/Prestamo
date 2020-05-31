@@ -9,7 +9,7 @@ namespace Prestamo.Entidades
     {
         [Key]
         public int Prestamoid { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.Now;
         public int Personaid { get; set; }
         public int Concepto { get; set; }
         public double Monto { get; set; }
