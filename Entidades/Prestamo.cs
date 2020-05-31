@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Prestamo.Entidades
 {
-    public class rCliente
+    public class Prestamo
     {
         [Key]
         public int Prestamoid { get; set; }

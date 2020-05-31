@@ -8,7 +8,7 @@ namespace Prestamo.DAL
 {
     public class Contexto : DbContext
     {
-        public DbSet<rCliente> rCliente { get; set; }
+        public DbSet<Entidades.Prestamo> rCliente { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(@"Data Source= DATA\PrestamoCliente.db");

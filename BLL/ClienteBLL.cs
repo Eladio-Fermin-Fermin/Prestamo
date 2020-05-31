@@ -35,7 +35,7 @@ namespace Prestamo.BLL
             return encontrado;
         }
 
-        private static bool Insertar(rCliente cliente)
+        private static bool Insertar(Entidades.Prestamo cliente)
         {
             bool key = false;
             Contexto contexto = new Contexto();
@@ -56,7 +56,7 @@ namespace Prestamo.BLL
             return key;
         }
 
-        private static bool Modificar(rCliente cliente)
+        private static bool Modificar(Entidades.Prestamo cliente)
         {
             bool key = false;
             Contexto contexto = new Contexto();
@@ -78,7 +78,7 @@ namespace Prestamo.BLL
             return key;
         }
 
-        public static bool Guardar(rCliente cliente)
+        public static bool Guardar(Entidades.Prestamo cliente)
         {
             if (!Existe(cliente.Prestamoid))
             {
@@ -117,10 +117,10 @@ namespace Prestamo.BLL
             return key;
         }
 
-        public static rCliente Buscar(int id)
+        public static Entidades.Prestamo Buscar(int id)
         {
             Contexto contexto = new Contexto();
-            rCliente cliente;
+            Entidades.Prestamo cliente;
 
             try
             {
@@ -138,9 +138,9 @@ namespace Prestamo.BLL
             return cliente;
         }
 
-        public static List<rCliente> GetList(Expression<Func<rCliente, bool>> criterio)
+        public static List<Entidades.Prestamo> GetList(Expression<Func<Entidades.Prestamo, bool>> criterio)
         {
-            List<rCliente> lista = new List<rCliente>();
+            List<Entidades.Prestamo> lista = new List<Entidades.Prestamo>();
             Contexto contexto = new Contexto();
 
             try

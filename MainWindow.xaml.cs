@@ -22,7 +22,7 @@ namespace Prestamo
     /// </summary>
     public partial class MainWindow : Window
     {
-        private rCliente cliente = new rCliente();
+        private Entidades.Prestamo cliente = new Entidades.Prestamo();
         public MainWindow()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace Prestamo
 
         private void Limpiar()
         {
-            this.cliente = new rCliente();
+            this.cliente = new Entidades.Prestamo();
             this.DataContext = cliente;
         }
 
@@ -66,7 +66,7 @@ namespace Prestamo
             }
             else
             {
-                this.cliente = new rCliente();
+                this.cliente = new Entidades.Prestamo();
             }
 
             this.DataContext = this.cliente;
