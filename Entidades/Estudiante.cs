@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Prestamo.Entidades
 {
-    public class Estudiantes
+    public class Estudiante
     {
         [Key]
         public int Id { get; set; }

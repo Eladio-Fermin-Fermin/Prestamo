@@ -22,7 +22,7 @@ namespace Prestamo.BLL
 
             try
             {
-                encontrado = contexto.rCliente.Any(e => e.Prestamoid == id);
+                encontrado = contexto.Prestamo.Any(e => e.Prestamoid == id);
             }
             catch (Exception)
             {
@@ -42,7 +42,7 @@ namespace Prestamo.BLL
 
             try
             {
-                contexto.rCliente.Add(cliente);
+                contexto.Prestamo.Add(cliente);
                 key = contexto.SaveChanges() > 0;
             }
             catch (Exception)
@@ -98,11 +98,11 @@ namespace Prestamo.BLL
             try
             {
 
-                var cliente = contexto.rCliente.Find(id);
+                var cliente = contexto.Prestamo.Find(id);
 
                 if (cliente != null)
                 {
-                    contexto.rCliente.Remove(cliente);
+                    contexto.Prestamo.Remove(cliente);
                     key = contexto.SaveChanges() > 0;
                 }
             }
@@ -124,7 +124,7 @@ namespace Prestamo.BLL
 
             try
             {
-                cliente = contexto.rCliente.Find(id);
+                cliente = contexto.Prestamo.Find(id);
 
             }
             catch (Exception)
@@ -145,7 +145,7 @@ namespace Prestamo.BLL
 
             try
             {
-                lista = contexto.rCliente.Where(criterio).ToList();
+                lista = contexto.Prestamo.Where(criterio).ToList();
             }
             catch (Exception)
             {
