@@ -7,6 +7,75 @@
         mc:Ignorable="d"
         Title="Registro de Estudiantes" Height="400" Width="400">
     <Grid>
-        
+
+        <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Id" FontSize="14" FontWeight="Bold"/>
+                <TextBox Name="IdTextBox" Text="{Binding EstudianteId}" Width="45" Height="20" Margin="97,0,40,0"/>
+
+                <Button Name="buscarButton" Width="60" Height="20" HorizontalContentAlignment="Left" Margin="-17,0,0,0" Click="btnbuscar_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/bb2.jpg" />
+                        <Label Content="Buscar" FontWeight="Bold" Padding="-2"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0" >
+                <Label Content="Nombre" FontWeight="Bold"/>
+                <TextBox Name="nombreTextBox" Text="{Binding Nombre}" Width="200" Height="20" Margin="64,0,30,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <Label Content="Telefono" FontWeight="Bold"/>
+                <TextBox Name="telefonoTextBox" Text="{Binding Telefono}" Width="200" Height="20" Margin="62,0,30,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <Label Content="Cedula" FontWeight="Bold"/>
+                <TextBox Name="cedulaTextBox" Text="{Binding Cedula}" Width="200" Height="20" Margin="73,0,30,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <Label Content="Direccion" FontWeight="Bold"/>
+                <TextBox Name="direccionTextBox" Text="{Binding Direccion}" Width="200" Height="20" Margin="59,0,30,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <Label Content="Balance" FontWeight="Bold"/>
+                <TextBox Name="BalanceTextBox" Text="{Binding Balance}" Width="200" Height="20" Margin="68,0,30,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <Label Content="Fecha Nacimiento" FontWeight="Bold"/>
+                <DatePicker Name="fechaNDatePicker" SelectedDate="{Binding FechaNacimiento}" Width="200" Height="20" Margin="12,0,30,0" Padding="2,-1,2,2"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="8,50,0,0" Width="245" >
+                <Button Name="nuevoButton" Width="60" Height="20" HorizontalContentAlignment="Left" Click="btnnuevo_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/nuevo.jpg" />
+                        <Label Content="Nuevo" FontWeight="Bold" Padding="-2"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="guardarButton" Height="20" HorizontalContentAlignment="Left" Margin="26,0,0,0" Click="btnguardar_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/disquete.png" />
+                        <Label Content="Guardar" FontWeight="Bold" Padding="-2"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Name="eliminarButton" Height="20" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="26,0" Click="btneliminar_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/ee2.png" />
+                        <Label Content="Eliminar" FontWeight="Bold" Padding="-2"/>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+
+        </StackPanel>
+
+
     </Grid>
 </Window>

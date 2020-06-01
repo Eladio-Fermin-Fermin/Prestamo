@@ -63,6 +63,16 @@ namespace Prestamo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] bb2 {
+            get {
+                object obj = ResourceManager.GetObject("bb2", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] disquete {
             get {
                 object obj = ResourceManager.GetObject("disquete", resourceCulture);
@@ -83,6 +93,16 @@ namespace Prestamo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] ee2 {
+            get {
+                object obj = ResourceManager.GetObject("ee2", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Eliminar {
             get {
                 object obj = ResourceManager.GetObject("Eliminar", resourceCulture);
@@ -96,6 +116,16 @@ namespace Prestamo.Properties {
         internal static byte[] Guarda {
             get {
                 object obj = ResourceManager.GetObject("Guarda", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] nuevo {
+            get {
+                object obj = ResourceManager.GetObject("nuevo", resourceCulture);
                 return ((byte[])(obj));
             }
         }

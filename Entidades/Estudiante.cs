@@ -10,6 +10,7 @@ namespace Prestamo.Entidades
     {
         [Key]
         public int Id { get; set; }
+        public float Balance { get; set; }
         public string Nombre { get; set; }
         public int Telefono { get; set; }
         public int Cedula { get; set; }
